@@ -11,7 +11,7 @@ export function setTokenHeader(token) {
 export function apiCall(method,path,data){
     return new Promise((resolve, reject)=> {
         //we added toLowerCase in case we wrote the method in uppercaps
-        return axios[method.toLowerCase](path,data)
+        return axios[method.toLowerCase()](path,data)
         .then(res => {
             return resolve(res.data)
         })
