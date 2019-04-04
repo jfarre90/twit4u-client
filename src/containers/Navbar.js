@@ -26,7 +26,7 @@ class Navbar extends Component {
                 <Link to={`/users/${this.props.currentUser.user.id}/messages/new`}>New Message</Link>
               </li>
               <li>
-                // We will use an anchor tag since we don't need react router to do anything here.
+                {/* We will use an anchor tag since we don't need react router to do anything here.*/}
                 <a onClick={this.logout}>Log out</a>
               </li>
             </ul>
