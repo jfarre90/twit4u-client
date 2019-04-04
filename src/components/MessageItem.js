@@ -33,8 +33,7 @@ const MessageItem = ({
                     <a className='btn btn-danger' onClick={removeMessage}>
                         Delete
                     </a>
-                )
-                
+                )}
             </div>
         </li>
     </div>
