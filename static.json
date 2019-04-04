@@ -5,7 +5,7 @@
     },
     "proxies": {
         "/api": {
-            "origin": "https://twit4u-server.herokuapp.com/"
+            "origin": "https://twit4u-server.herokuapp.com/api"
         }
     }
 }
