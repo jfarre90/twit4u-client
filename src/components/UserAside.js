@@ -1,5 +1,5 @@
 import React from 'react';
-import DefaultProfileImg from '../images/deafult-profile-image.svg';
+import DefaultProfileImg from '../images/default-profile-image.svg';
 
 const UserAside = ({ profileImageUrl, username }) => (
     <aside className="col-sm-2">
