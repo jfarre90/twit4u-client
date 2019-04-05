@@ -8,18 +8,17 @@ export function setTokenHeader(token) {
     }
 }
 
-export function apiCall(method,path,data){
-    return new Promise((resolve, reject)=> {
+export function apiCall(method, path, data) {
+    return new Promise((resolve, reject) => {
         //we added toLowerCase in case we wrote the method in uppercaps
         return axios[method.toLowerCase()](path,data)
+        //when getting a response from Axios, we get a response in a certain object.
+        //We get an object called response and a subobject called data. Inside data there's the subobject error
         .then(res => {
-            return resolve(res.data)
+            return resolve(res.data);
         })
         .catch(err => {
             return reject(err.response.data.error);
         });
     });
-    
-    //when getting a response from Axios, we get a response in a certain object.
-    //We get an object called response and a subobject called data. Inside data there's the subobject error
 }
