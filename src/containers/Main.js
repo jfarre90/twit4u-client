@@ -52,4 +52,4 @@ function mapStateToProps(state){
     };
 }
 
-export default withRouter(connect(mapStateToProps,{authUser})(Main));
+export default withRouter(connect(mapStateToProps,{authUser, removeError})(Main));
