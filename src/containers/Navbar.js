@@ -27,7 +27,7 @@ class Navbar extends Component {
               </li>
               <li>
                 {/* We will use an anchor tag since we don't need react router to do anything here.*/}
-                <a onClick={this.logout}>Log out</a>
+                <a href='' onClick={this.logout}>Log out</a>
               </li>
             </ul>
           ) : (
