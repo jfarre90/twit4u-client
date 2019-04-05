@@ -30,9 +30,9 @@ const MessageItem = ({
                 </span>
                 <p>{text}</p>
                 {isCorrectUser &&(
-                    <a href='' className='btn btn-danger' onClick={removeMessage}>
+                    <button className='btn btn-danger' onClick={removeMessage}>
                         Delete
-                    </a>
+                    </button>
                 )}
             </div>
         </li>
